@@ -2,8 +2,8 @@ import { User } from "./user";
 
 const user = new User();
 
-user.setFirstName("John");
-user.setLastName("Doe");
+user.setFirstname("John");
+user.setLastname("Doe");
 user.setAge(25);
 
 console.log(user.getFullName());

@@ -4,10 +4,10 @@ export class User {
     private age:number=0
     static BIRTH_YEAR:number=2000
 
-    setFirstName(firstName:string){
+    setFirstname(firstName:string){
         this.firstName=firstName
     }
-    setLastName(lastName:string){
+    setLastname(lastName:string){
         this.lastName=lastName
     }
     setAge(age:number){
