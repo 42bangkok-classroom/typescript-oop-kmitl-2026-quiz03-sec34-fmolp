@@ -1,6 +1,7 @@
 export class Character {
     name:string=""
     health:number=100
+    damageReduction:number=10
 
     getName(){
         return this.name
