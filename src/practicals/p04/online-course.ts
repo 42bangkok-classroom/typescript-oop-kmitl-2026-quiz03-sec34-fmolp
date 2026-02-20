@@ -14,10 +14,10 @@ export class OnlineCourse {
     enroll():boolean{
         if(this.isOpen && this.enrolledStudents<this.maxStudents){
             this.enrolledStudents++
-            console.log(`Enrolled in ${this.courseName}. Total enrolled: ${this.enrolledStudents}`)
+            console.log(`Successfully enrolled in ${this.courseName}.`)
             return true
         }else{
-            console.log(`Cannot enroll in ${this.courseName}. Course is full or closed.`)
+            console.log(`false  (Course Full)`)
             return false
         }
     }
@@ -30,5 +30,8 @@ export class OnlineCourse {
     }
     canEnroll():boolean{
         return this.isOpen && this.enrolledStudents<this.maxStudents
+    }
+    getCourseStatus():string{
+        return this.isOpen?"Open":"Closed"
     }
 }
