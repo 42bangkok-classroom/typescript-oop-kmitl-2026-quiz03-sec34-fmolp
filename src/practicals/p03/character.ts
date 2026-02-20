@@ -1,16 +1,18 @@
 export class Character {
-    name:string=""
-    health:number=100
-    damageReduction:number=10
+    name: string = "";
+    health: number = 100;
 
-    getName(){
-        return this.name
+    constructor(name: string) {
+        this.name = name;
     }
-    getHealth(){
-        return this.health
+
+    getName() {
+        return this.name;
     }
-    receiveDamage(damage:number){
-        this.health-=damage
-        console.log(`${this.name} received ${damage} damage. Remaining health: ${this.health}`)
+    getHealth() {
+        return this.health;
+    }
+    receiveDamage(damage: number) {
+        this.health -= damage;
     }
 }

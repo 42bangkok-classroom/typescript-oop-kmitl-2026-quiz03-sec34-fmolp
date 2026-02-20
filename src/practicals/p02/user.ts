@@ -17,6 +17,14 @@ export class User {
         return this.age
     }
     getFullName(){
-        return `${this.firstName} ${this.lastName}`
+        if (this.firstName && this.lastName) {
+            return `${this.firstName} ${this.lastName}`;
+        } else if (this.firstName) {
+            return this.firstName;
+        } else if (this.lastName) {
+            return this.lastName;
+        } else {
+            return "";
+        }
     }
 }
